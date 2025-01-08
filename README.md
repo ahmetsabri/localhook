@@ -19,24 +19,12 @@ Localhook is a lightweight tool built in Go to receive and debug webhooks locall
 
 You can download pre-built binaries for your platform from the table below:
 
-| Platform      | Architecture   | Download Link                                                                                             |
-| ------------- | -------------- | --------------------------------------------------------------------------------------------------------- |
-| macOS (Intel) | 64-bit         | [Download](https://github.com/ahmetsabri/localhook/raw/refs/heads/main/bin/macintl/localhook)             |
-| macOS (ARM)   | 64-bit (M1/M2) | [Download](https://github.com/ahmetsabri/localhook/raw/refs/heads/main/bin/macm1/localhook)               |
-| Linux (Intel) | 64-bit         | [Download](https://github.com/ahmetsabri/localhook/raw/refs/heads/main/bin/linuxintel/localhook)          |
-| Linux (ARM)   | 64-bit         | [Download](https://github.com/ahmetsabri/localhook/raw/refs/heads/main/bin/linuxArm/localhook)            |
-| Windows       | 64-bit         | [Download](https://github.com/ahmetsabri/localhook/raw/refs/heads/main/bin/windows/localhook-windows.exe) |
-
-> **Note**: Replace `#` in the download links with the actual URLs to your binaries.
+| Platform      | Architecture   | Download Link                                                                            |
+| ------------- | -------------- | ---------------------------------------------------------------------------------------- |
+| macOS (Intel) | 64-bit         | [Download](https://github.com/ahmetsabri/localhook/releases/download/V1/mac_m1.zip)      |
+| macOS (ARM)   | 64-bit (M1/M2) | [Download](https://github.com/ahmetsabri/localhook/releases/download/V1/mac_m1.zip)      |
+| Linux (Intel) | 64-bit         | [Download](https://github.com/ahmetsabri/localhook/releases/download/V1/linux_intel.zip) |
+| Linux (ARM)   | 64-bit         | [Download](https://github.com/ahmetsabri/localhook/releases/download/V1/linux_arm.zip)   |
+| Windows       | 64-bit         | [Download](https://github.com/ahmetsabri/localhook/releases/download/V1/windows.zip)     |
 
 ---
-
-## Build from Source
-
-To build `localhook` from source, follow these steps:
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/localhook.git
-   cd localhook
-   ```
