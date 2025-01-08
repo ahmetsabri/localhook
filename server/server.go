@@ -27,9 +27,13 @@ func main() {
 	reponseFromWebhook = make(chan string)
 	redisClient = red.CreateRedisClient()
 	r := mux.NewRouter()
+	staticDir := "./static/"
 
-	fs := http.FileServer(http.Dir("static"))
-	r.Handle("/", fs)
+	r.PathPrefix("/static/").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir(staticDir))))
+
+	r.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		http.ServeFile(w, r, staticDir+"index.html")
+	}).Methods("GET")
 
 	r.HandleFunc("/connect/{apikey}", connect)
 	r.HandleFunc("/webhook/{apikey}", webhook).Methods(http.MethodPost)
