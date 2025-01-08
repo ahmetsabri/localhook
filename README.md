@@ -28,3 +28,17 @@ You can download pre-built binaries for your platform from the table below:
 | Windows       | 64-bit         | [Download](https://github.com/ahmetsabri/localhook/releases/download/V1/windows.zip)     |
 
 ---
+
+## Usage
+
+### **Step 1: Download and Unzip**
+1. Download the appropriate pre-built binary for your platform from the [Downloads](#download-pre-built-binaries) section.
+2. Unzip the downloaded file and navigate to the unzipped folder:
+   ```bash
+   unzip <platform>.zip
+   cd <platform>
+   sudo mv localhook /usr/local/bin
+3. Reopen terminal and run the localhook command:
+   ```bash
+   localhook -f <your local URL>
+5. Use the provided `webhook url` in any api and go on ... 🚀
