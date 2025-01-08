@@ -28,9 +28,11 @@ func main() {
 	redisClient = red.CreateRedisClient()
 	r := mux.NewRouter()
 
+	fs := http.FileServer(http.Dir("static"))
+	r.Handle("/", fs)
+
 	r.HandleFunc("/connect/{apikey}", connect)
 	r.HandleFunc("/webhook/{apikey}", webhook).Methods(http.MethodPost)
-
 	serverPort := os.Getenv("SERVER_PORT")
 	color.Cyan("server listenin on 127.0.0.1%s", serverPort)
 	log.Fatal(http.ListenAndServe(serverPort, r))
