@@ -1,3 +1,4 @@
 .codegpt
 bin/*
 builder.sh
+.env
