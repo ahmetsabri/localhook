@@ -31,7 +31,6 @@ You can download pre-built binaries for your platform from the table below:
 
 ## Usage
 
-### **Step 1: Download and Unzip**
 1. Download the appropriate pre-built binary for your platform from the [Downloads](#download-pre-built-binaries) section.
 2. Unzip the downloaded file and navigate to the unzipped folder:
    ```bash
