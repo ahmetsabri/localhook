@@ -7,6 +7,7 @@ Localhook is a lightweight tool built in Go to receive and debug webhooks locall
 ---
 
 ## Features
+
 - 🚀 **Lightweight**: Built in Go for fast and efficient performance.
 - 🖥️ **Cross-Platform**: Supports macOS, Linux, and Windows.
 - 📝 **Easy to Use**: Simply run the binary and start receiving webhooks.
@@ -18,13 +19,13 @@ Localhook is a lightweight tool built in Go to receive and debug webhooks locall
 
 You can download pre-built binaries for your platform from the table below:
 
-| Platform       | Architecture | Download Link                          |
-|----------------|--------------|----------------------------------------|
-| macOS (Intel)  | 64-bit       | [Download](#)                          |
-| macOS (ARM)    | 64-bit (M1/M2) | [Download](#)                          |
-| Linux (Intel)  | 64-bit       | [Download](#)                          |
-| Linux (ARM)    | 64-bit       | [Download](#)                          |
-| Windows        | 64-bit       | [Download](#)                          |
+| Platform      | Architecture   | Download Link                                                                                             |
+| ------------- | -------------- | --------------------------------------------------------------------------------------------------------- |
+| macOS (Intel) | 64-bit         | [Download](https://github.com/ahmetsabri/localhook/raw/refs/heads/main/bin/macintl/localhook)             |
+| macOS (ARM)   | 64-bit (M1/M2) | [Download](https://github.com/ahmetsabri/localhook/raw/refs/heads/main/bin/macm1/localhook)               |
+| Linux (Intel) | 64-bit         | [Download](https://github.com/ahmetsabri/localhook/raw/refs/heads/main/bin/linuxintel/localhook)          |
+| Linux (ARM)   | 64-bit         | [Download](https://github.com/ahmetsabri/localhook/raw/refs/heads/main/bin/linuxArm/localhook)            |
+| Windows       | 64-bit         | [Download](https://github.com/ahmetsabri/localhook/raw/refs/heads/main/bin/windows/localhook-windows.exe) |
 
 > **Note**: Replace `#` in the download links with the actual URLs to your binaries.
 
@@ -38,3 +39,4 @@ To build `localhook` from source, follow these steps:
    ```bash
    git clone https://github.com/yourusername/localhook.git
    cd localhook
+   ```
