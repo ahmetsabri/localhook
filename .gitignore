@@ -1,3 +1,4 @@
 .codegpt
 builder.sh
 .env
+nginx.conf
